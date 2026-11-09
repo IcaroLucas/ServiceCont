@@ -1,0 +1,55 @@
+.contain {
+  display: flex;
+  flex-direction: var(--input-direction, row);
+  align-items: var(--input-align, center);
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  font-weight: 550;
+  padding-right: var(--title-padding-right, 15px);
+  margin-bottom: var(--title-margin-bottom, 0px);
+  font-size: var(--font-lg);
+  white-space: nowrap;
+  color: #000;
+}
+
+.inputBox {
+  width: 100%;
+  min-width: 0;
+}
+
+.txtArea {
+  width: 100%;
+  height: 35px;
+  font-size: var(--font-lg);
+  padding: 6px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #475569;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.inpt {
+  width: 100%;
+  height: 35px;
+  font-size: var(--font-lg);
+  padding: 0px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: gray;
+}
+
+.inptDisabled {
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.inptError {
+  border-color: red;
+}

@@ -1,0 +1,96 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #d0d4cc;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  min-height: 300px;
+  padding: 10px;
+  background-color: #ffff;
+}
+
+.logo {
+  width: 35%;
+  height: auto;
+  margin: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #009218;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  min-height: 500px;
+  max-width: 100%;
+}
+
+.field {
+  font-weight: bold;
+  border-radius: 3px;
+  border: 2px dashed;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.legend {
+  font-size: var(--font-xl);
+  border: 2px dashed #4caf50;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: #ffff;
+  color: #009218;
+}
+
+.customInput {
+  margin-bottom: 20px;
+}
+
+.customInput [class*="title"] {
+  width: 55px;
+  min-width: 55px;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.btn {
+  display: flex;
+  font-weight: bold;
+  font-size: var(--font-lg);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 48px;
+  margin-left: auto;
+  background: linear-gradient(to left, #1a6b2f, #4caf50);
+  color: #ffff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.textError {
+  display: flex;
+  font-size: var(--font-xs);
+  color: red;
+}
+
+.manipulationBtn {
+  display: flex;
+}

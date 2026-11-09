@@ -1,0 +1,140 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 45px;
+  border-bottom: 20px solid transparent;
+  border-image: linear-gradient(to right, #1a6b2f, #4caf50, #e97f1b) 1;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 10px;
+  list-style: none;
+}
+
+.menu {
+  position: relative;
+}
+
+.item {
+  position: relative;
+  font-size: var(--font-lg);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  transition: color 0.2s ease;
+}
+
+.itemActive,
+.routeActive {
+  color: #e97f1b;
+}
+
+.routeActive::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 12px;
+  width: calc(100% - 24px);
+  height: 5px;
+  background-color: #1a6b2f;
+  border-radius: 2px 2px 0 0;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  white-space: nowrap;
+  z-index: 1;
+  padding: 10px 12px;
+  margin-top: 13px;
+  font-size: var(--font-lg);
+  background-color: #e97f1b;
+  transform-origin: top;
+  animation: dropdownOpen 0.2s ease-out;
+}
+
+@keyframes dropdownOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.link,
+.linkActive {
+  text-decoration: none;
+  padding: 5px 12px;
+}
+
+.link {
+  color: #fff;
+}
+
+.link:hover {
+  color: #cfcfcf;
+}
+
+.linkActive {
+  color: #1a6b2f;
+}
+
+button.link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.profileBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #1a6b2f;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.profileBtnActive {
+  background-color: #e97f1b;
+}
+
+.profileDropdown {
+  flex-direction: column;
+}
+
+.profileDropdown .link,
+.profileDropdown .linkActive {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.profileName {
+  padding: 8px 12px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.15);
+}
